@@ -8,6 +8,11 @@ class File
 {
 public:
     File();
+    Tram& getPremierTram() const;
+    Tram& getDernierTram() const;
+
+    void setPremierTram(Tram& premierTram);
+    void setDernierTram(Tram& dernierTram);
 
 private:
     Tram *d_premierTram;

@@ -14,15 +14,28 @@ class Tram
 {
 public:
     Tram();
+
+    //getter
     bool getVitesse() const ;
     int getVitessemax() const ;
     bool getSens() const ;
     int getTempsArret() const ;
     int getDistanceMin() const ;
     int getNumLigne() const ;
-    Position getPosition() const ;
+    Position getPosition() ;
     Tram& getTramSuivant() const ;
     Arret& getArretSuivant() const ;
+
+    //setter
+    void setVitesse(bool vitesse)  ;
+    void setVitessemax(int vitesseMax)  ;
+    void setSens(bool sens)  ;
+    void setTempsArret(int tempsArret)  ;
+    void setDistanceMin(int distanceMin)  ;
+    void setNumLigne(int numLigne)  ;
+    void setPosition(int x, int y) ;
+    void setTramSuivant(Tram& tramSuivant)  ;
+    void setArretSuivant(Arret& arretSuivant)  ;
 
 private:
     bool d_vitesse;
