@@ -14,6 +14,7 @@ class Ligne
 
 public:
     Ligne( int num );
+    int getLigne() const;
 
 private:
     int d_num;
